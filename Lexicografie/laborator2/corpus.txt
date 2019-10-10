@@ -1,2 +1,2 @@
 To come back to our initial question what is used in Python: The authors who, call the mechanism call-by-value and those who call it call-by-reference are stretching the definitions until they fit.
-Correctly speaking, Python uses a mechanism, which is known as "Call-by-Object", sometimesalso called 0232/20-10-90 or "Call by Sharing" Lect. Brav tes.darat@cgm.com http://www.test.com/dir/filename.jpg?var1=foo#bar Mr. John
+Correctly speaking, Python uses a mechanism, which is known as "Call-by-Object", sometimesalso called 0232/20-10-90 or 142.32.48.231 Lect. Brav tes.darat@cgm.com http://www.test.com/dir/filename.jpg?var1=foo#bar Mr. John  si acolo dati-i-l  cucu a priori a priori este asta m-ai depart-ment

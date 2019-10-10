@@ -83,7 +83,9 @@ def checkCompoundPhrases(listOfTokens):
             index = index + 2
         else:
             newList.append(listOfTokens[index])
-        index = index + 1
+            index = index + 1
+            if(len(listOfTokens) - index ==1):
+                newList.append(listOfTokens[index])
     return newList
 
 
@@ -96,10 +98,10 @@ def checkHyphens(listOfTokens):
             auxList = listOfTokens[index].split('-')
             for token in auxList:
                 newList.append(token)
-            index = index + len(auxList) - 1
+            index = index + 1
         else:
             newList.append(listOfTokens[index])
-        index = index + 1
+            index = index + 1
     return newList
 
 #Task 6
@@ -112,7 +114,9 @@ def checkDespSilabe(listOfTokens):
             index = index + 2
         else:
             newList.append(listOfTokens[index])
-        index = index + 1
+            index = index + 1
+            if(len(listOfTokens) - index ==1):
+                newList.append(listOfTokens[index])
     return newList
 
 
