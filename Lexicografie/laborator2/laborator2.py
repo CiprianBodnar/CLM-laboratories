@@ -18,12 +18,15 @@ def tokenizeText(text):
 
 #Task 2
 def checkIpAddresses(token):
+    #Se verifica daca token-ul gasit este de forma unei adrese IP
     check = re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$",token)
     if(check):
         return True
     return False
 
 def concatIpAddress(listOfTokens):
+    #Se verifica daca exista token-uri consecutive care pot forma o adresa IP, apoi se concateneaza
+    # si se ia drept un singur token
     newList = []
     index = 0
     while index < len(listOfTokens) :
@@ -46,9 +49,11 @@ def checkStartWith(token):
     return re.match(startWithBigLettter, token) or token in listOfAbrv
   
 def checkForAbreviation(listOfTokens, index):
+    #Verificare daca exista abrevieri
     return checkStartWith(listOfTokens[index]) and listOfTokens[index+1] == '.' and checkStartWith(listOfTokens[index+2])
 
 def concatNames(listOfTokens):
+    #Daca sunt gasite abrevieri, se concateneaza cu urmatorul token daca acesta incepe cu o litera mare
     newList = []
     index = 0
     while index< len(listOfTokens):
@@ -63,6 +68,7 @@ def concatNames(listOfTokens):
 
 #Task 4
 def checkPhoneNumber(listOfTokens):
+    #Verifica daca exista token-uri consecutive care pot forma un numar de telefon si le concateneaza in unul singur
     newList = []
     index = 0
     while index < len(listOfTokens):
@@ -75,6 +81,7 @@ def checkPhoneNumber(listOfTokens):
     return newList
 
 def checkCompoundPhrases(listOfTokens):
+    #Verifica daca exista token-uri care pot forma expresii sau substantive compuse si le concateneaza
     newList = []
     index = 0
     while index < len(listOfTokens)-1:
@@ -106,6 +113,7 @@ def checkHyphens(listOfTokens):
 
 #Task 6
 def checkDespSilabe(listOfTokens):
+    #Verifica daca exista cuvinte despartite in silabe, astfel uneste cele doua token-uri, eliminand cratima ce le desparte
     newList = []
     index = 0
     while index < len(listOfTokens) - 1:
@@ -138,4 +146,3 @@ if __name__ == "__main__":
 
 
     printList(listOfTokens)
-    
