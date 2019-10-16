@@ -1,0 +1,6 @@
+car
+dog
+girl
+boy
+run
+send
