@@ -1,0 +1,16 @@
+task1 : 
+task2: implicarea din text
+task3 : word embeded -> retele neuronale -> similiaritate intre cuvinte din punct de vedere semantic, cuvinte care apar impreuna intr-un context.
+task5 :
+task4 : prop cu sens si prop fara sens, si alegere multipla si sa dai explicatii de ce nu merge
+task6: trebuie puse eticheta cu BIO tag
+        BIO -> begin , inside, outside -. unde incepe definitia , unde e intern si unde se termina.
+        relation clasification -> relatia dintre taguri 
+task7 : daca un titlu de stiri continte umor sau nu
+task 8 : ? 
+task 9: 
+task 10: pe ce cuvinte sa se puna accentul intr-un text. 
+task 11, 12 ce a fost si anul trecut
+    12 -> task din care s-a lucrat foarte mult, imbunatatire 
+
+Procedeengs semeval 2019 
