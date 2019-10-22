@@ -36,9 +36,13 @@ class Game:
                 print("You win!")
                 self.numberOfLives = 0
             else:
-                print("Wrong! Guess again! Here’s another hint:")
-                self.numberOfLives = self.numberOfLives -1
-                definition = self.__generateDefinition()
+                if self.numberOfLives==1:
+                    print("Game Over! The word is:", self.word)
+                    break
+                else:
+                    print("Wrong! Guess again! Here’s another hint:")
+                    self.numberOfLives = self.numberOfLives -1
+                    definition = self.__generateDefinition()
 
 
 
